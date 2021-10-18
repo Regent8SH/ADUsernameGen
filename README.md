@@ -21,12 +21,12 @@ Please note: provided names without spaces will be disregarded
 Example usage:
 
 testnames.txt contents:
-
+'''
 John Hammond\n
 The Cyber Mentor\n
 Professor  Messer\n
 ippsec\n
-
+'''
 
 >./ADUsernameGen.py -i testnames.txt -o testoutput.txt
 
