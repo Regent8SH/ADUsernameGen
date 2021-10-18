@@ -22,45 +22,45 @@ Example usage:
 
 testnames.txt contents:
 
-John Hammond
-The Cyber Mentor
-Professor  Messer
-ippsec
+John Hammond\n
+The Cyber Mentor\n
+Professor  Messer\n
+ippsec\n
 
 
 >./ADUsernameGen.py -i testnames.txt -o testoutput.txt
 
 >cat testoutput.txt
  
-JohnHammond
-John.Hammond
-JHammond
-JohnH
-JohHam
-JHam
-JohnHammond1
-John.Hammond1
-JHammond1
-JohnH1
-JohHam1
-JHam1
-TheMentor
-The.Mentor
-TMentor
-TheM
-TheMentor1
-The.Mentor1
-TMentor1
-TheM1
-ProfessorMesser
-Professor.Messer
-PMesser
-ProfessorM
-ProMes
-PMes
-ProfessorMesser1
-Professor.Messer1
-PMesser1
-ProfessorM1
-ProMes1
-PMes1
+JohnHammond\n
+John.Hammond\n
+JHammond\n
+JohnH\n
+JohHam\n
+JHam\n
+JohnHammond1\n
+John.Hammond1\n
+JHammond1\n
+JohnH1\n
+JohHam1\n
+JHam1\n
+TheMentor\n
+The.Mentor\n
+TMentor\n
+TheM\n
+TheMentor1\n
+The.Mentor1\n
+TMentor1\n
+TheM1\n
+ProfessorMesser\n
+Professor.Messer\n
+PMesser\n
+ProfessorM\n
+ProMes\n
+PMes\n
+ProfessorMesser1\n
+Professor.Messer1\n
+PMesser1\n
+ProfessorM1\n
+ProMes1\n
+PMes1\n
