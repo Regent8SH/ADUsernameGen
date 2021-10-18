@@ -21,19 +21,17 @@ Please note: provided names without spaces will be disregarded
 Example usage:
 
 testnames.txt contents:
-'''
+
 John Hammond
 The Cyber Mentor
 Professor  Messer
 ippsec
 
-'''
 
 >./ADUsernameGen.py -i testnames.txt -o testoutput.txt
 
 >cat testoutput.txt
-
-''' 
+ 
 JohnHammond
 John.Hammond
 JHammond
@@ -66,4 +64,3 @@ PMesser1
 ProfessorM1
 ProMes1
 PMes1
-'''
