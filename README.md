@@ -13,7 +13,6 @@ Example usage is as follows:
 
 Yes, it is up to you to create a text list of people's names. I can't do everything. Seperate them with newlines and you're good to go.
 
-If additional naming standards are needed, they can easily be added into the "mangleNames" function
+If additional naming standards are needed, they can easily be inserted into the "mangleNames" function above the comment line.
 
-Please note: provided names without spaces will be disregarded
-... I'M LOOKING AT YOU BEYONCE...
+Please note: names without spaces will be added to the output file unchanged.
