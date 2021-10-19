@@ -3,9 +3,8 @@
 #Example:
 #./ADUsernameGen.py -i original.txt -o generated.txt
 
-#If additional naming standards are needed, they can easily be added in the "mangleNames" function
-#Please note: provided names without spaces will be disregarded
-#I'M LOOKING AT YOU BEYONCE...
+#If additional naming standards are needed, they can easily be inserted into the "mangleNames" function above the comment line.
+#Please note: names without spaces will be added to the output file unchanged. Feel free to add a username to your list.
 
 import sys, getopt, re, os
 
@@ -14,10 +13,13 @@ def mangleNames(first, last):
 	mangledList.append(first+last)
 	mangledList.append(first+'.'+last)
 	mangledList.append(first[0]+last)
+	mangledList.append(first)
+	mangledList.append(first[0]+last[0])
 	mangledList.append(first+last[0])
 	if len(first) > 3 and len(last) > 3:
 		mangledList.append(first[0:3]+last[0:3])
 		mangledList.append(first[0]+last[0:3])
+	#INSERT ADDITIONAL FORMATS BEFORE THIS LINE
 	currentLen = len(mangledList)
 	c = 0
 	while c < currentLen:
@@ -33,14 +35,14 @@ def createList(inputfile):
 			name = name.strip()
 		firstList = []
 		lastList = []
+		finalList = []
 		for name in nameLines:
 			if ' ' in name:
 				splitList = re.split(' +', name)
 				firstList.append(splitList[0])
 				lastList.append(splitList[-1])
 			else:
-				pass
-		finalList = []
+				finalList.append(name)
 		if len(firstList) == len(lastList):
 			i = 0
 			while i < len(firstList):
