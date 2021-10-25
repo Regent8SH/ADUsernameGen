@@ -26,6 +26,12 @@ def mangleNames(first, last):
 		plus1 = "{}1".format(mangledList[c].strip())
 		mangledList.append(plus1)
 		c += 1
+	currentLen = len(mangledList)
+	c = 0
+	while c < currentLen:
+		nameToLower = mangledList[c].lower().strip()
+		mangledList.append(nameToLower)
+		c += 1
 	return mangledList
 
 def createList(inputfile):
