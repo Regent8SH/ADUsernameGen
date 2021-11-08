@@ -12,6 +12,8 @@ def mangleNames(first, last):
 	mangledList = []
 	mangledList.append(first+last)
 	mangledList.append(first+'.'+last)
+	mangledList.append(first+'-'+last)
+	mangledList.append(first+'_'+last)
 	mangledList.append(first[0]+last)
 	mangledList.append(first)
 	mangledList.append(first[0]+last[0])
