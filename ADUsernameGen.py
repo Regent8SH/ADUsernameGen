@@ -27,11 +27,7 @@ def mangleNames(first, last):
 		mangledList.append(plus1)
 		c += 1
 	currentLen = len(mangledList)
-	c = 0
-	while c < currentLen:
-		nameToLower = mangledList[c].lower().strip()
-		mangledList.append(nameToLower)
-		c += 1
+
 	return mangledList
 
 def createList(inputfile):
@@ -54,7 +50,7 @@ def createList(inputfile):
 			while i < len(firstList):
 				first = firstList[i]
 				last = lastList[i]
-				mangledList = mangleNames(first, last)
+				mangledList = mangleNames(first.lower(), last.lower())
 				for mangled in mangledList:
 					finalList.append(mangled)
 				i += 1
